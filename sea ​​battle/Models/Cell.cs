@@ -6,10 +6,17 @@ namespace sea_battle.Models
 {
     public enum CellStatus { Empty, Ship, Miss, Hit, Destroyed }
 
+    /// <summary>
+    /// Представляє окрему клітинку ігрового поля.
+    /// </summary>
     public class Cell : INotifyPropertyChanged
     {
         private CellStatus _status;
+
+        /// <summary> Координата X клітинки на ігровому полі. </summary>
         public int X { get; set; }
+
+        /// <summary> Координата Y клітинки на ігровому полі. </summary>
         public int Y { get; set; }
 
         public ICommand ShootCommand { get; set; }
