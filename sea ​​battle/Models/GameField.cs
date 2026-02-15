@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -8,6 +8,8 @@ namespace sea_battle.Models
     public class GameField
     {
         public const int Size = 10;
+        private static readonly int[] DefaultShipConfiguration = { 4, 3, 3, 2, 2, 2, 1, 1, 1, 1 };
+
         public ObservableCollection<Cell> Cells { get; set; }
         public List<Ship> Ships { get; set; }
 
@@ -33,7 +35,7 @@ namespace sea_battle.Models
         public void RandomPlaceShips()
         {
             Random rand = new Random();
-            int[] shipSizes = { 4, 3, 3, 2, 2, 2, 1, 1, 1, 1 };
+            int[] shipSizes = DefaultShipConfiguration;
 
             foreach (int size in shipSizes)
             {
