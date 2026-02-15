@@ -48,20 +48,25 @@ namespace sea_battle.Models
 
                     if (CanPlaceShip(x, y, size, isVertical))
                     {
-                        Ship ship = new Ship();
-                        for (int i = 0; i < size; i++)
-                        {
-                            int currX = isVertical ? x : x + i;
-                            int currY = isVertical ? y + i : y;
-                            var cell = GetCell(currX, currY);
-                            cell.Status = CellStatus.Ship;
-                            ship.Cells.Add(cell);
-                        }
-                        Ships.Add(ship);
+                        PlaceShipOnCells(x, y, size, isVertical);
                         placed = true;
                     }
                 }
             }
+        }
+
+        private void PlaceShipOnCells(int x, int y, int size, bool isVertical)
+        {
+            Ship ship = new Ship();
+            for (int i = 0; i < size; i++)
+            {
+                int currX = isVertical ? x : x + i;
+                int currY = isVertical ? y + i : y;
+                var cell = GetCell(currX, currY);
+                cell.Status = CellStatus.Ship;
+                ship.Cells.Add(cell);
+            }
+            Ships.Add(ship);
         }
 
         private bool CanPlaceShip(int x, int y, int size, bool isVertical)
