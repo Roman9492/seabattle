@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\converters\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\converters\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\models\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\models\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\models\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\models\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\models\\gamefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\models\\gamefield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\models\\gameenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\models\\gameenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\views\\menuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\views\\menuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|c:\\users\\goodr\\onedrive\\desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\views\\gameview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\views\\gameview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\views\\gameview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\views\\gameview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea_\u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle.csproj|C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BDCC3-5E29-44B0-89CB-0A39927D7341}|sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle.csproj|solutionrelative:sea \u200B\u200Bbattle\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StatusToColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Converters\\StatusToColorConverter.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Converters\\StatusToColorConverter.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Converters\\StatusToColorConverter.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Converters\\StatusToColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:23:08.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ship.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\Ship.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Models\\Ship.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\Ship.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Models\\Ship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:22:56.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameField.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\GameField.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Models\\GameField.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\GameField.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Models\\GameField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:22:21.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameEnums.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\GameEnums.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Models\\GameEnums.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\GameEnums.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Models\\GameEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:21:56.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\GameView.xaml.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Views\\GameView.xaml.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\GameView.xaml.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Views\\GameView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:20:08.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Models\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\RelayCommand.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Models\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T18:16:39.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameView.xaml",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\GameView.xaml",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Views\\GameView.xaml",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\GameView.xaml",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Views\\GameView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-11T11:45:11.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuView.xaml",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\MenuView.xaml",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Views\\MenuView.xaml",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Views\\MenuView.xaml",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Views\\MenuView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-11T11:44:27.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\ViewModels\\GameViewModel.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\ViewModels\\GameViewModel.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\ViewModels\\GameViewModel.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\ViewModels\\GameViewModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T11:39:11.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\Cell.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\Models\\Cell.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\Models\\Cell.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\Models\\Cell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T20:05:22.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\ClassDiagram1.cd",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\ClassDiagram1.cd",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2026-02-10T20:03:15.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\MainWindow.xaml",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-10T09:57:40.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "sea \u200B\u200Bbattle\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Goodr\\OneDrive\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\\sea \u200B\u200Bbattle\\sea \u200B\u200Bbattle\\MainWindow.xaml.cs",
+              "RelativeToolTip": "sea \u200B\u200Bbattle\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T09:57:39.955Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
