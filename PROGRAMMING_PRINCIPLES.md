@@ -2,7 +2,7 @@
 
 ### 1. Encapsulation (Інкапсуляція)
 Дані про стан клітин ігрового поля та параметри кораблів приховані всередині класів, а доступ до них здійснюється через публічні властивості та методи.
-* [Приклад у коді: Cell.cs](./sea​_battle/Models/Cell.cs)
+* [Приклад у коді: Cell.cs](https://github.com/Roman9492/seabattle/blob/41c45286f982f1d620b71b636e02678f96c3104b/sea%20%E2%80%8B%E2%80%8Bbattle/Models/Cell.cs#L1)
 * [Приклад у коді: Ship.cs](./sea%20battle/Models/Ship.cs)
 
 ### 2. DRY (Don't Repeat Yourself)
