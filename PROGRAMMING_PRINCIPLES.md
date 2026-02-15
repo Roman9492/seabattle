@@ -2,13 +2,13 @@
 
 ### 1. Encapsulation (Інкапсуляція)
 Дані про стан клітин ігрового поля та параметри кораблів приховані всередині класів, а доступ до них здійснюється через публічні властивості та методи.
-* [Приклад у коді: Cell.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/Models/Cell.cs)
-* [Приклад у коді: Ship.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/Models/Ship.cs)
+* [Приклад у коді: Cell.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/sea%20battle/Models/Cell.cs)
+* [Приклад у коді: Ship.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/sea%20battle/Models/Ship.cs)
 
 ### 2. DRY (Don't Repeat Yourself)
 Логіка генерації ігрового поля та перевірки пострілів винесена в окремий клас `GameField`, що дозволяє використовувати один і той самий код як для гравця, так і для комп'ютера без дублювання.
-* [Приклад у коді: GameField.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/Models/GameField.cs)
+* [Приклад у коді: GameField.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/sea%20battle/Models/GameField.cs)
 
 ### 3. KISS (Keep It Simple, Stupid)
 Взаємодія між View та ViewModel реалізована за допомогою простого механізму `RelayCommand`, що робить обробку натискань кнопок зрозумілою та легкою для підтримки.
-* [Приклад у коді: RelayCommand.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/Models/RelayCommand.cs)
+* [Приклад у коді: RelayCommand.cs](https://github.com/Roman9492/seabattle/blob/main/sea%20battle/sea%20battle/Models/RelayCommand.cs)
