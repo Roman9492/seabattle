@@ -1,7 +1,0 @@
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\bin\Debug\VideoProviderFactory.exe.config
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\bin\Debug\VideoProviderFactory.exe
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\bin\Debug\VideoProviderFactory.pdb
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\obj\Debug\VideoProviderFactory.csproj.AssemblyReference.cache
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\obj\Debug\VideoProviderFactory.csproj.CoreCompileInputs.cache
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\obj\Debug\VideoProviderFactory.exe
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab2\VideoProviderFactory\VideoProviderFactory\obj\Debug\VideoProviderFactory.pdb
