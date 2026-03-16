@@ -1,0 +1,11 @@
+# Сміття Visual Studio
+.vs/
+[Bb]in/
+[Ob]j/
+*.user
+*.suo
+*.pdb
+
+# Тимчасові файли OneDrive
+.DS_Store
+Thumbs.db
