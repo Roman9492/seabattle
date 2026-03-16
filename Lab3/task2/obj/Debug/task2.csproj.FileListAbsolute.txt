@@ -1,7 +1,0 @@
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\bin\Debug\task2.exe.config
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\bin\Debug\task2.exe
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\bin\Debug\task2.pdb
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\obj\Debug\task2.csproj.AssemblyReference.cache
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\obj\Debug\task2.exe
-C:\Users\Goodr\OneDrive\Desktop\курсова\sea ​​battle\Lab3\task2\obj\Debug\task2.pdb
