@@ -4,23 +4,24 @@ using System.Text;
 
 namespace task5
 {
-    public interface INodeState
+    public interface IVisitor
     {
-        string Render(LightElementNode context);
+        void VisitTextNode(LightTextNode textNode);
+        void VisitElementNode(LightElementNode elementNode);
     }
 
-    public class NormalState : INodeState
+    public class WordCountVisitor : IVisitor
     {
-        public string Render(LightElementNode context)
+        public int TotalChars { get; private set; } = 0;
+
+        public void VisitTextNode(LightTextNode textNode)
         {
-            string classes = context.GetClassesCount() > 0 ? $" class=\"{context.GetClassesString()}\"" : "";
-            return $"<{context.TagName}{classes}>\n  {context.InnerHTML()}\n</{context.TagName}>";
+            TotalChars += textNode.GetText().Length;
         }
-    }
 
-    public class HiddenState : INodeState
-    {
-        public string Render(LightElementNode context) => ""; 
+        public void VisitElementNode(LightElementNode elementNode)
+        {
+        }
     }
 
     public abstract class LightNode
@@ -28,35 +29,30 @@ namespace task5
         public abstract string OuterHTML();
         public abstract string InnerHTML();
         public virtual List<LightNode> GetChildren() => new List<LightNode>();
+        
+        public abstract void Accept(IVisitor visitor);
     }
 
     public class LightTextNode : LightNode
     {
         private readonly string _text;
         public LightTextNode(string text) => _text = text;
+        public string GetText() => _text;
+
         public override string InnerHTML() => _text;
         public override string OuterHTML() => _text;
+
+        public override void Accept(IVisitor visitor) => visitor.VisitTextNode(this);
     }
 
     public class LightElementNode : LightNode
     {
         public string TagName { get; }
-        private List<string> _cssClasses = new List<string>();
         private List<LightNode> _children = new List<LightNode>();
-        
-        private INodeState _state;
 
-        public LightElementNode(string tagName)
-        {
-            TagName = tagName;
-            _state = new NormalState(); 
-        }
-
-        public void SetState(INodeState state) => _state = state;
+        public LightElementNode(string tagName) => TagName = tagName;
         public void AddChild(LightNode node) => _children.Add(node);
         public override List<LightNode> GetChildren() => _children;
-        public int GetClassesCount() => _cssClasses.Count;
-        public string GetClassesString() => string.Join(" ", _cssClasses);
 
         public override string InnerHTML()
         {
@@ -65,7 +61,16 @@ namespace task5
             return sb.ToString();
         }
 
-        public override string OuterHTML() => _state.Render(this);
+        public override string OuterHTML() => $"<{TagName}>{InnerHTML()}</{TagName}>";
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.VisitElementNode(this);
+            foreach (var child in _children)
+            {
+                child.Accept(visitor);
+            }
+        }
     }
 
     class Program
@@ -74,15 +79,16 @@ namespace task5
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            var div = new LightElementNode("div");
-            div.AddChild(new LightTextNode("Цей текст може зникнути!"));
+            var body = new LightElementNode("body");
+            var p = new LightElementNode("p");
+            p.AddChild(new LightTextNode("Привіт, світ!"));
+            body.AddChild(p);
 
-            Console.WriteLine("--- Поточний стан: Normal ---");
-            Console.WriteLine(div.OuterHTML());
+            var statsVisitor = new WordCountVisitor();
+            body.Accept(statsVisitor);
 
-            div.SetState(new HiddenState());
-            Console.WriteLine("\n--- Поточний стан: Hidden ---");
-            Console.WriteLine("Результат: " + div.OuterHTML() + "(порожньо)");
+            Console.WriteLine(body.OuterHTML());
+            Console.WriteLine($"\n[Статистика]: Всього символів у тексті: {statsVisitor.TotalChars}");
 
             Console.ReadKey();
         }
