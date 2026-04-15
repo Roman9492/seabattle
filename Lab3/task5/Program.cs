@@ -4,10 +4,25 @@ using System.Text;
 
 namespace task5
 {
-    public interface IIterator
+    public interface ICommand
     {
-        LightNode Next();
-        bool HasNext();
+        void Execute();
+        void Undo();
+    }
+
+    public class AddClassCommand : ICommand
+    {
+        private readonly LightElementNode _node;
+        private readonly string _className;
+
+        public AddClassCommand(LightElementNode node, string className)
+        {
+            _node = node;
+            _className = className;
+        }
+
+        public void Execute() => _node.AddClass(_className);
+        public void Undo() => _node.RemoveClass(_className);
     }
 
     public abstract class LightNode
@@ -30,21 +45,16 @@ namespace task5
     public class LightElementNode : LightNode
     {
         protected string _tagName;
-        private string _displayType; 
-        private bool _isSelfClosing;
         private List<string> _cssClasses = new List<string>();
         private List<LightNode> _children = new List<LightNode>();
 
-        public LightElementNode(string tagName, string displayType, bool isSelfClosing, List<string> cssClasses = null)
-        {
-            _tagName = tagName;
-            _displayType = displayType;
-            _isSelfClosing = isSelfClosing;
-            if (cssClasses != null) _cssClasses = cssClasses;
-        }
+        public LightElementNode(string tagName) => _tagName = tagName;
 
         public void AddChild(LightNode node) => _children.Add(node);
         public override List<LightNode> GetChildren() => _children;
+
+        public void AddClass(string className) => _cssClasses.Add(className);
+        public void RemoveClass(string className) => _cssClasses.Remove(className);
 
         public override string InnerHTML()
         {
@@ -55,38 +65,8 @@ namespace task5
 
         public override string OuterHTML()
         {
-            OnBeforeRender();
             string classes = _cssClasses.Count > 0 ? $" class=\"{string.Join(" ", _cssClasses)}\"" : "";
-            string result = _isSelfClosing ? $"<{_tagName}{classes} />" : $"<{_tagName}{classes}>\n  {InnerHTML()}\n</{_tagName}>";
-            OnAfterRender();
-            return result;
-        }
-    }
-
-    public class DepthFirstIterator : IIterator
-    {
-        private Stack<LightNode> _stack = new Stack<LightNode>();
-        public DepthFirstIterator(LightNode root) => _stack.Push(root);
-        public bool HasNext() => _stack.Count > 0;
-        public LightNode Next()
-        {
-            var node = _stack.Pop();
-            var children = node.GetChildren();
-            for (int i = children.Count - 1; i >= 0; i--) _stack.Push(children[i]);
-            return node;
-        }
-    }
-
-    public class BreadthFirstIterator : IIterator
-    {
-        private Queue<LightNode> _queue = new Queue<LightNode>();
-        public BreadthFirstIterator(LightNode root) => _queue.Enqueue(root);
-        public bool HasNext() => _queue.Count > 0;
-        public LightNode Next()
-        {
-            var node = _queue.Dequeue();
-            foreach (var child in node.GetChildren()) _queue.Enqueue(child);
-            return node;
+            return $"<{_tagName}{classes}>{InnerHTML()}</{_tagName}>";
         }
     }
 
@@ -96,19 +76,17 @@ namespace task5
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            var list = new LightElementNode("ul", "block", false);
-            var item1 = new LightElementNode("li", "block", false);
-            item1.AddChild(new LightTextNode("Перший"));
-            list.AddChild(item1);
-            list.AddChild(new LightElementNode("li", "block", false));
+            var div = new LightElementNode("div");
+            div.AddChild(new LightTextNode("Текст з командою"));
 
-            Console.WriteLine("--- Тест Ітератора DFS (В глибину) ---");
-            var dfs = new DepthFirstIterator(list);
-            while (dfs.HasNext()) Console.WriteLine("Вузол: " + dfs.Next().GetType().Name);
+            Console.WriteLine("До команди: " + div.OuterHTML());
 
-            Console.WriteLine("\n--- Тест Ітератора BFS (В ширину) ---");
-            var bfs = new BreadthFirstIterator(list);
-            while (bfs.HasNext()) Console.WriteLine("Вузол: " + bfs.Next().GetType().Name);
+            var command = new AddClassCommand(div, "highlight");
+            command.Execute();
+            Console.WriteLine("Після Execute: " + div.OuterHTML());
+
+            command.Undo();
+            Console.WriteLine("Після Undo: " + div.OuterHTML());
 
             Console.ReadKey();
         }
