@@ -4,25 +4,23 @@ using System.Text;
 
 namespace task5
 {
-    public interface ICommand
+    public interface INodeState
     {
-        void Execute();
-        void Undo();
+        string Render(LightElementNode context);
     }
 
-    public class AddClassCommand : ICommand
+    public class NormalState : INodeState
     {
-        private readonly LightElementNode _node;
-        private readonly string _className;
-
-        public AddClassCommand(LightElementNode node, string className)
+        public string Render(LightElementNode context)
         {
-            _node = node;
-            _className = className;
+            string classes = context.GetClassesCount() > 0 ? $" class=\"{context.GetClassesString()}\"" : "";
+            return $"<{context.TagName}{classes}>\n  {context.InnerHTML()}\n</{context.TagName}>";
         }
+    }
 
-        public void Execute() => _node.AddClass(_className);
-        public void Undo() => _node.RemoveClass(_className);
+    public class HiddenState : INodeState
+    {
+        public string Render(LightElementNode context) => ""; 
     }
 
     public abstract class LightNode
@@ -30,8 +28,6 @@ namespace task5
         public abstract string OuterHTML();
         public abstract string InnerHTML();
         public virtual List<LightNode> GetChildren() => new List<LightNode>();
-        public virtual void OnBeforeRender() { }
-        public virtual void OnAfterRender() { }
     }
 
     public class LightTextNode : LightNode
@@ -44,17 +40,23 @@ namespace task5
 
     public class LightElementNode : LightNode
     {
-        protected string _tagName;
+        public string TagName { get; }
         private List<string> _cssClasses = new List<string>();
         private List<LightNode> _children = new List<LightNode>();
+        
+        private INodeState _state;
 
-        public LightElementNode(string tagName) => _tagName = tagName;
+        public LightElementNode(string tagName)
+        {
+            TagName = tagName;
+            _state = new NormalState(); 
+        }
 
+        public void SetState(INodeState state) => _state = state;
         public void AddChild(LightNode node) => _children.Add(node);
         public override List<LightNode> GetChildren() => _children;
-
-        public void AddClass(string className) => _cssClasses.Add(className);
-        public void RemoveClass(string className) => _cssClasses.Remove(className);
+        public int GetClassesCount() => _cssClasses.Count;
+        public string GetClassesString() => string.Join(" ", _cssClasses);
 
         public override string InnerHTML()
         {
@@ -63,11 +65,7 @@ namespace task5
             return sb.ToString();
         }
 
-        public override string OuterHTML()
-        {
-            string classes = _cssClasses.Count > 0 ? $" class=\"{string.Join(" ", _cssClasses)}\"" : "";
-            return $"<{_tagName}{classes}>{InnerHTML()}</{_tagName}>";
-        }
+        public override string OuterHTML() => _state.Render(this);
     }
 
     class Program
@@ -77,16 +75,14 @@ namespace task5
             Console.OutputEncoding = Encoding.UTF8;
 
             var div = new LightElementNode("div");
-            div.AddChild(new LightTextNode("Текст з командою"));
+            div.AddChild(new LightTextNode("Цей текст може зникнути!"));
 
-            Console.WriteLine("До команди: " + div.OuterHTML());
+            Console.WriteLine("--- Поточний стан: Normal ---");
+            Console.WriteLine(div.OuterHTML());
 
-            var command = new AddClassCommand(div, "highlight");
-            command.Execute();
-            Console.WriteLine("Після Execute: " + div.OuterHTML());
-
-            command.Undo();
-            Console.WriteLine("Після Undo: " + div.OuterHTML());
+            div.SetState(new HiddenState());
+            Console.WriteLine("\n--- Поточний стан: Hidden ---");
+            Console.WriteLine("Результат: " + div.OuterHTML() + "(порожньо)");
 
             Console.ReadKey();
         }
